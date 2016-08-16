@@ -1,0 +1,33 @@
+collection users
+{
+	name : "mayuri",
+	surname: "ardad",
+	login_credentials:{
+						username: "mayuri"
+						password: "something"
+
+						},
+	role: {
+			position: "admin",
+			people_assigned: [....],
+			},
+	posts: [.....]
+}
+
+
+
+collection posts
+
+{
+	text: "hello",
+	image: ObjectId('....'),
+	comments: {	
+				id: ObjectID();
+				user_id : (user_id)
+				text: "hello"
+				replies: [....] //ids refering to comments
+
+				},
+	tags: [....],
+
+}

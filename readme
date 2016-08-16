@@ -1,0 +1,12 @@
+designed basic schema of nosql social network
+contains 2 collections
+users and posts
+users will have login_credentials and role defined
+in role if it is super_admin then it will have the array of references to other admins
+if role is admin it will refer to particular group of users
+if role is editor it will refer to array of posts
+if it is user the value in array will be null
+
+so while querying we can provide particular privilages to particular role
+
+in posts schema comments will be recursive that is comment have reply which is again comment 
